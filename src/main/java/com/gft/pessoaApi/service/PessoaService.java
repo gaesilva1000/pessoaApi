@@ -18,16 +18,11 @@ import java.util.Optional;
 @Service
 public class PessoaService {
 
-//    @Autowired
-//    BoletoClient boletoClient;
-
     @Autowired
     private PessoaRepository pessoaRepository;
 
     @Autowired
     private BoletoClient boletoClient;
-
-
 
     public Pessoa criarPessoa(Pessoa pessoa) {
         validarCpf(pessoa.getCpf());
